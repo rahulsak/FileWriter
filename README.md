@@ -1,1 +1,2 @@
 # FileWriter
+Cordova demo plugin

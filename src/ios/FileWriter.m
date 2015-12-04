@@ -2,7 +2,7 @@
 //  FileWriter.m
 //  CustomPlugin
 //
-//  Created by appMobi Mac Dev Machine on 12/4/15.
+//  Created by Mac Dev Machine on 12/4/15.
 //
 //
 
@@ -49,8 +49,9 @@
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
-#pragma mark - Util_Methods
+#pragma mark - Methods
 
+//set the file contents 
 - (void) setFileContents:(NSString *)fileContents {
     
 
@@ -66,7 +67,7 @@
                   error       : nil];
 }
 
-
+//get the file contents 
 - (NSString *) getFileContents{
     
 
@@ -84,7 +85,5 @@
                               ];
     return fileContents;
 }
-
-
 
 @end

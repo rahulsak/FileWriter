@@ -26,12 +26,12 @@
     [self setFileContents: dateStr];
 
     // Create an object with a simple success property.
-    NSDictionary *jsonObj = [ [NSDictionary alloc]
+    NSDictionary *jsonObj = [[NSDictionary alloc]
                              initWithObjectsAndKeys :
                              @"true", @"success",
                              nil];
     
-    CDVPluginResult *pluginResult = [ CDVPluginResult
+    CDVPluginResult *pluginResult = [CDVPluginResult
                                      resultWithStatus    : CDVCommandStatus_OK
                                      messageAsDictionary : jsonObj];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
